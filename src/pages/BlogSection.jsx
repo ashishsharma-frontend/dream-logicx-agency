@@ -11,45 +11,70 @@ const BlogSection = () => {
       date: "03 Nov 2025",
       category: "Web Performance",
       title: "How We Achieved 100 Lighthouse Score on a React App (Case Study)",
-      excerpt: "From 68 to 100 in 14 days. We reveal every optimization — lazy loading, code splitting, image CDN, React 19 Server Components, and edge caching.",
-      image: "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=800&h=600&fit=crop&q=80",
-      author: { name: "DreamLogicX Team", role: "Founders", avatar: "https://i.pravatar.cc/150?img=68" },
+      excerpt:
+        "From 68 to 100 in 14 days. We reveal every optimization — lazy loading, code splitting, image CDN, React 19 Server Components, and edge caching.",
+      image:
+        "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=800&h=600&fit=crop&q=80",
+      author: {
+        name: "DreamLogicX Team",
+        role: "Founders",
+        avatar: "https://i.pravatar.cc/150?img=68",
+      },
       readTime: "9 min read",
-      featured: true
+      featured: true,
     },
     {
       id: 2,
       date: "29 Oct 2025",
       category: "Product Strategy",
       title: "Why 90% of MVPs Fail — And How We Fixed It for 12 Clients",
-      excerpt: "Validation before code. Learn our 5-step pre-build framework: problem interviews, Jobs-to-be-Done, risk scoring, and no-code testing.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&q=80",
-      author: { name: "DreamLogicX Team", role: "Founders", avatar: "https://i.pravatar.cc/150?img=68" },
+      excerpt:
+        "Validation before code. Learn our 5-step pre-build framework: problem interviews, Jobs-to-be-Done, risk scoring, and no-code testing.",
+      image:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop&q=80",
+      author: {
+        name: "DreamLogicX Team",
+        role: "Founders",
+        avatar: "https://i.pravatar.cc/150?img=68",
+      },
       readTime: "11 min read",
-      featured: false
+      featured: false,
     },
     {
       id: 3,
       date: "24 Oct 2025",
       category: "Animation & UX",
-      title: "GSAP + React: Micro-Interactions That Increased CTA Clicks by 67%",
-      excerpt: "Hover effects, scroll triggers, and loading sequences — we break down 7 high-impact animations that feel premium and drive action.",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=600&fit=crop&q=80",
-      author: { name: "DreamLogicX Team", role: "Founders", avatar: "https://i.pravatar.cc/150?img=68" },
+      title:
+        "GSAP + React: Micro-Interactions That Increased CTA Clicks by 67%",
+      excerpt:
+        "Hover effects, scroll triggers, and loading sequences — we break down 7 high-impact animations that feel premium and drive action.",
+      image:
+        "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=600&fit=crop&q=80",
+      author: {
+        name: "DreamLogicX Team",
+        role: "Founders",
+        avatar: "https://i.pravatar.cc/150?img=68",
+      },
       readTime: "7 min read",
-      featured: false
+      featured: false,
     },
     {
       id: 4,
       date: "18 Oct 2025",
       category: "Conversion",
       title: "The $47K Landing Page: A/B Tests That Doubled Sign-Ups",
-      excerpt: "Headline, CTA color, social proof placement, and exit-intent popups — full breakdown of tests that turned a failing page into a revenue machine.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&q=80",
-      author: { name: "DreamLogicX Team", role: "Founders", avatar: "https://i.pravatar.cc/150?img=68" },
+      excerpt:
+        "Headline, CTA color, social proof placement, and exit-intent popups — full breakdown of tests that turned a failing page into a revenue machine.",
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&q=80",
+      author: {
+        name: "DreamLogicX Team",
+        role: "Founders",
+        avatar: "https://i.pravatar.cc/150?img=68",
+      },
       readTime: "8 min read",
-      featured: false
-    }
+      featured: false,
+    },
   ];
 
   return (
@@ -97,7 +122,6 @@ const BlogSection = () => {
 
       <section style={{ padding: "6rem 2rem", background: "#F8F9FA" }}>
         <div style={{ maxWidth: "1400px", margin: "0 auto" }}>
-          
           {/* Header - Minimal & Professional */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -121,7 +145,7 @@ const BlogSection = () => {
             >
               Our Blog
             </span>
-            
+
             <h2
               style={{
                 fontSize: "clamp(1.625rem, 4vw, 2.375rem)",
@@ -134,7 +158,7 @@ const BlogSection = () => {
             >
               Latest Insights & Articles
             </h2>
-            
+
             <p
               style={{
                 fontSize: "1rem",
@@ -143,7 +167,8 @@ const BlogSection = () => {
                 maxWidth: "700px",
               }}
             >
-              Real strategies, real results. Learn from our 27+ years of building high-performance digital products.
+              Real strategies, real results. Learn from our 27+ years of
+              building high-performance digital products.
             </p>
           </motion.div>
 
@@ -165,9 +190,12 @@ const BlogSection = () => {
             onMouseEnter={() => setHoveredCard(0)}
             onMouseLeave={() => setHoveredCard(null)}
           >
-            <div className="image-wrapper" style={{ height: "100%", minHeight: "500px" }}>
-              <img 
-                src={blogs[0].image} 
+            <div
+              className="image-wrapper"
+              style={{ height: "100%", minHeight: "500px" }}
+            >
+              <img
+                src={blogs[0].image}
                 alt={blogs[0].title}
                 style={{
                   width: "100%",
@@ -193,27 +221,65 @@ const BlogSection = () => {
               </div>
             </div>
 
-            <div style={{ padding: "3.5rem 3rem", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+            <div
+              style={{
+                padding: "3.5rem 3rem",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+              }}
+            >
               <div>
-                <div style={{ display: "flex", alignItems: "center", gap: "1.25rem", marginBottom: "1.5rem", flexWrap: "wrap" }}>
-                  <span style={{
-                    background: "rgba(63, 55, 201, 0.08)",
-                    color: "#3F37C9",
-                    fontSize: "0.75rem",
-                    fontWeight: 600,
-                    padding: "0.4rem 1rem",
-                    display: "inline-block",
-                  }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "1.25rem",
+                    marginBottom: "1.5rem",
+                    flexWrap: "wrap",
+                  }}
+                >
+                  <span
+                    style={{
+                      background: "rgba(63, 55, 201, 0.08)",
+                      color: "#3F37C9",
+                      fontSize: "0.75rem",
+                      fontWeight: 600,
+                      padding: "0.4rem 1rem",
+                      display: "inline-block",
+                    }}
+                  >
                     {blogs[0].category}
                   </span>
                 </div>
 
-                <div style={{ display: "flex", alignItems: "center", gap: "1.5rem", marginBottom: "2rem", fontSize: "0.875rem", color: "#666" }}>
-                  <span style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "1.5rem",
+                    marginBottom: "2rem",
+                    fontSize: "0.875rem",
+                    color: "#666",
+                  }}
+                >
+                  <span
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "0.5rem",
+                    }}
+                  >
                     <Calendar size={14} />
                     {blogs[0].date}
                   </span>
-                  <span style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <span
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "0.5rem",
+                    }}
+                  >
                     <Clock size={14} />
                     {blogs[0].readTime}
                   </span>
@@ -253,7 +319,9 @@ const BlogSection = () => {
                   marginTop: "2rem",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+                <div
+                  style={{ display: "flex", alignItems: "center", gap: "1rem" }}
+                >
                   <img
                     src={blogs[0].author.avatar}
                     alt={blogs[0].author.name}
@@ -265,7 +333,13 @@ const BlogSection = () => {
                     }}
                   />
                   <div>
-                    <div style={{ fontSize: "0.875rem", color: "#1A1A1A", fontWeight: 600 }}>
+                    <div
+                      style={{
+                        fontSize: "0.875rem",
+                        color: "#1A1A1A",
+                        fontWeight: 600,
+                      }}
+                    >
                       {blogs[0].author.name}
                     </div>
                     <div style={{ fontSize: "0.8125rem", color: "#666" }}>
@@ -279,7 +353,7 @@ const BlogSection = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ x: 4 }}
-                  style={{ 
+                  style={{
                     display: "flex",
                     alignItems: "center",
                     gap: "0.625rem",
@@ -332,14 +406,24 @@ const BlogSection = () => {
                 </div>
 
                 <div style={{ padding: "2rem" }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1rem", flexWrap: "wrap" }}>
-                    <span style={{
-                      background: "rgba(63, 55, 201, 0.08)",
-                      color: "#3F37C9",
-                      fontSize: "0.75rem",
-                      fontWeight: 600,
-                      padding: "0.35rem 0.875rem",
-                    }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "1rem",
+                      marginBottom: "1rem",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    <span
+                      style={{
+                        background: "rgba(63, 55, 201, 0.08)",
+                        color: "#3F37C9",
+                        fontSize: "0.75rem",
+                        fontWeight: 600,
+                        padding: "0.35rem 0.875rem",
+                      }}
+                    >
                       {blog.category}
                     </span>
                   </div>
@@ -372,12 +456,33 @@ const BlogSection = () => {
                     {blog.excerpt}
                   </p>
 
-                  <div style={{ display: "flex", alignItems: "center", gap: "1rem", marginBottom: "1.5rem", fontSize: "0.875rem", color: "#666" }}>
-                    <span style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "1rem",
+                      marginBottom: "1.5rem",
+                      fontSize: "0.875rem",
+                      color: "#666",
+                    }}
+                  >
+                    <span
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "0.5rem",
+                      }}
+                    >
                       <Calendar size={13} />
                       {blog.date}
                     </span>
-                    <span style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                    <span
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "0.5rem",
+                      }}
+                    >
                       <Clock size={13} />
                       {blog.readTime}
                     </span>
@@ -392,7 +497,13 @@ const BlogSection = () => {
                       borderTop: "1px solid #E5E7EB",
                     }}
                   >
-                    <div style={{ display: "flex", alignItems: "center", gap: "0.875rem" }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "0.875rem",
+                      }}
+                    >
                       <img
                         src={blog.author.avatar}
                         alt={blog.author.name}
@@ -404,7 +515,13 @@ const BlogSection = () => {
                         }}
                       />
                       <div>
-                        <div style={{ fontSize: "0.875rem", color: "#1A1A1A", fontWeight: 600 }}>
+                        <div
+                          style={{
+                            fontSize: "0.875rem",
+                            color: "#1A1A1A",
+                            fontWeight: 600,
+                          }}
+                        >
                           {blog.author.name}
                         </div>
                         <div style={{ fontSize: "0.75rem", color: "#666" }}>
@@ -425,7 +542,8 @@ const BlogSection = () => {
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
-                        background: hoveredCard === blog.id ? "#3F37C9" : "#F1F5F9",
+                        background:
+                          hoveredCard === blog.id ? "#3F37C9" : "#F1F5F9",
                         color: hoveredCard === blog.id ? "#FFFFFF" : "#3F37C9",
                         borderRadius: "50%",
                         transition: "all 0.3s ease",
@@ -446,7 +564,11 @@ const BlogSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            style={{ display: "flex", justifyContent: "center", marginTop: "3rem" }}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "3rem",
+            }}
           >
             <motion.a
               href="https://blogs.dreamlogicx.com/"
